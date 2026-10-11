@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fc;
+        }
+
+        header, footer {
+            background: #293b65;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #b9c8e8;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #202e50;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        main {
+            background: white;
+            margin: 25px;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #293b65;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #b9c8e8;
+        }
+
+        button {
+            background: #293b65;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Book Store</h1>
+    <p>GL Bajaj Institute of Technology and Management</p>
+    <p>Student: Prachi | Roll No: 251920110260</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="cart.html">Cart</a>
+</nav>
+
+<main>
+    <h2 align="center">My Shopping Cart</h2>
+
+    <table>
+        <tr>
+            <th>Book Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Programming in C</td>
+            <td>₹350</td>
+            <td>1</td>
+            <td>₹350</td>
+        </tr>
+
+        <tr>
+            <td>Data Structures</td>
+            <td>₹450</td>
+            <td>1</td>
+            <td>₹450</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">Grand Total</th>
+            <th>₹800</th>
+        </tr>
+    </table>
+
+    <p align ="center">
+        <a href="catalogue.html">
+            <button>Continue Shopping</button>
+        </a>
+
+        <button onclick="alert('Order placed successfully!')">
+            Place Order
+        </button>
+    </p>
+</main>
+
+<footer>
+    <p>Online Book Store | Read and Learn</p>
+</footer>
+
+</body>
+</html>
