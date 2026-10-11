@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Online Book Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6fc;
+            color: #293b65;
+        }
+
+        header {
+            background-color: #293b65;
+            color: white;
+            padding: 15px 20px;
+            display: grid;
+            grid-template-columns: 100px 1fr 200px;
+            align-items: center;
+            min-height: 80px;
+        }
+
+        .logo {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+            background-color: white;
+        }
+
+        header h2 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .student {
+            text-align: right;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        nav {
+            background-color: #b9c8e8;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #202e50;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            min-height: 450px;
+        }
+
+        aside {
+            background-color: #dce4f5;
+            width: 180px;
+            padding: 20px;
+        }
+
+        aside a {
+            display: block;
+            color: #293b65;
+            text-decoration: none;
+            padding: 12px 0;
+            font-weight: bold;
+        }
+
+        aside a:hover {
+            color: #758fc5;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+            background-color: white;
+        }
+
+        main h2 {
+            color: #293b65;
+            text-align: center;
+        }
+
+        .login-box {
+            max-width: 350px;
+            margin: 35px auto;
+            padding: 25px;
+            background-color: #f4f6fc;
+            border: 1px solid #dce4f5;
+            border-radius: 8px;
+        }
+
+        .login-box h3 {
+            text-align: center;
+            color: #293b65;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b9c8e8;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 11px;
+            margin-top: 20px;
+            background-color: #293b65;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #425986;
+        }
+
+        .register {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        .register a {
+            color: #293b65;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #293b65;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 12px;
+            }
+
+            .student {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                width: auto;
+            }
+
+            .login-box {
+                margin: 25px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="GL Bajaj Logo" class="logo">
+
+        <h2>Online Book Store</h2>
+
+        <div class="student">
+            <b>Prachi</b><br>
+            Roll No: 251920110260
+        </div>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <div class="container">
+
+        <aside>
+            <a href="cse.html">CSE</a>
+            <a href="ece.html">ECE</a>
+            <a href="eee.html">EEE</a>
+            <a href="civil.html">CIVIL</a>
+        </aside>
+
+        <main>
+            <h2>Login to Online Book Store</h2>
+
+            <div class="login-box">
+                <h3>Login</h3>
+
+                <form action="#" method="post">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Enter your password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+
+                <p class="register">
+                    Don't have an account?
+                    <a href="registration.html">Register here</a>
+                </p>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        Online Book Store | Read and Learn
+    </footer>
+
+</body>
+</html>
