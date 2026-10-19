@@ -2,140 +2,121 @@
 <html>
 <head>
     <title>Book Catalogue</title>
+
     <style>
         body {
-            margin: 0;
             font-family: Arial;
             background: #f4f6fc;
+            margin: 0;
+            text-align: center;
         }
 
-        header, footer {
+        header {
             background: #293b65;
             color: white;
             padding: 15px;
             text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            position: absolute;
+            left: 15px;
+            top: 15px;
         }
 
         nav {
             background: #b9c8e8;
             padding: 12px;
-            text-align: center;
         }
 
         nav a {
-            color: #202e50;
-            text-decoration: none;
             margin: 15px;
-        }
-
-        main {
-            background: white;
-            margin: 20px;
-            padding: 20px;
+            text-decoration: none;
+            color: #293b65;
+            font-weight: bold;
         }
 
         table {
-            width: 100%;
+            margin: 30px auto;
+            width: 80%;
             border-collapse: collapse;
+            background: white;
         }
 
         th, td {
             border: 1px solid #293b65;
             padding: 12px;
-            text-align: center;
         }
 
         th {
             background: #b9c8e8;
         }
 
-        button {
+        footer {
             background: #293b65;
             color: white;
-            padding: 8px 12px;
-            border: none;
-            cursor: pointer;
-        }
-
-        a {
-            color: #293b65;
+            padding: 12px;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Online Book Store</h1>
-    <p>GL Bajaj Institute of Technology and Management</p>
-    <p>Student: Prachi | Roll No: 251920110260</p>
-</header>
+    <header>
+        <img src="logo.jpg" alt="Logo">
 
-<nav>
-    <a href="home.html">Home</a>
-    <a href="login.html">Login</a>
-    <a href="registration.html">Registration</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="cart.html">Cart</a>
-</nav>
+        <h1>Online Book Store</h1>
+        <p>GL Bajaj Institute of Technology and Management</p>
+        <p>Student: Prachi | Roll No: 251920110260</p>
+    </header>
 
-<main>
-    <h2 align="center">Book Catalogue</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="cart.html">Cart</a>
+    </nav>
 
-    <p>
-        Categories:
-        <a href="cse.html">CSE</a> |
-        <a href="ece.html">ECE</a> |
-        <a href="eee.html">EEE</a> |
-        <a href="civil.html">CIVIL</a>
-    </p>
+    <h2>Book Catalogue</h2>
 
     <table>
         <tr>
             <th>Book ID</th>
             <th>Book Name</th>
-            <th>Category</th>
             <th>Price</th>
             <th>Action</th>
         </tr>
 
         <tr>
             <td>101</td>
-            <td>Programming in C</td>
-            <td>CSE</td>
+            <td>C Programming</td>
             <td>₹350</td>
-            <td><a href="cart.html"><button>Add to Cart</button></a></td>
+            <td><button>Add to Cart</button></td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Data Structures</td>
+            <td>₹450</td>
+            <td><button>Add to Cart</button></td>
         </tr>
 
         <tr>
             <td>103</td>
-            <td>Basic Electronics</td>
-            <td>ECE</td>
-            <td>₹300</td>
-            <td><a href="cart.html"><button>Add to Cart</button></a></td>
-        </tr>
-
-        <tr>
-            <td>104</td>
-            <td>Electrical Technology</td>
-            <td>EEE</td>
-            <td>₹500</td>
-            <td><a href="cart.html"><button>Add to Cart</button></a></td>
-        </tr>
-
-        <tr>
-            <td>105</td>
-            <td>Building Materials</td>
-            <td>CIVIL</td>
+            <td>Python Programming</td>
             <td>₹400</td>
-            <td><a href="cart.html"><button>Add to Cart</button></a></td>
+            <td><button>Add to Cart</button></td>
         </tr>
     </table>
-</main>
 
-<footer>
-    <p>Online Book Store | Read and Learn</p>
-</footer>
+    <footer>
+        Online Book Store | Read and Learn
+    </footer>
 
 </body>
 </html>
